@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, arial, helvetica, sans-serif;
+
+  }
+
+article {
+  background-color: #eeeeee;
+}
+.conteiner {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 10px;
+
+}
+.logo {
+  float: left;
+}
+nav {
+  width: 500px;
+  margin: 0 auto;
+}
+li {
+  width: 100px;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+}
+.userblock {
+   position: absolute;;
+   max-width: 140px;
+   right: 0px;
+   top: 25px;
+   text-transform: uppercase;
+   font-weight: bold;
+   padding: 10px 10px 10px 50px;
+/*Почему не нужна ссылка на корзине, мы же ее должны по идее кликать?
+  */
+}
+
+.userblock::before {
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background:
+  url("sprite/sprite.png");
+  background-position: top left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.features {
+  width: 1160px;
+  padding-top:20px;
+  margin: 0 auto;
+}
+.button {
+  background-color: #fb565a;
+  border-radius: 5px;
+  padding: 20px 50px;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+h1 {
+  font-weight: bold;
+  font-size: 45px;
+}
+p {
+  font-size: 16px;
+  margin-bottom: 40px;
+
+}
+.text {
+  float: left;
+}
+.slider {
+  float: right;
+/*  При уменьшении масштаба до 25%, этот слайдер выпадает рлчему-то?*/
+}
+
+img {
+  display:block;
+}
+
+
+/*Второй блок*/
+
+
+.content {
+
+  width: 1200px;
+  padding-top: 70px;
+  margin: 0 auto;
+  clear:both;
+
+  }
+
+  .block {
+    width: 1160px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    border-bottom: 2px solid lightgray;
+    /*background-color: pink;*/
+    }
+
+.blockleft {
+  width: 300px;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.blockcenter {
+  width: 300px;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.blockright {
+  width: 300px;
+  display: inline-block;
+
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.bookingR {
+  background-color: #fb565a;
+  padding: 11px 38px;
+  color: white;
+  border-radius: 5px;
+
+}
+
+.bookingG {
+  background-color: #00ca74;
+  padding: 11px 38px;
+  /*Почему то не выстраиваются точные размеры кнопок, как в макете*/
+  color: white;
+  border-radius: 5px;
+}
+
+.bookingY {
+  background-color: #efc84a;
+  padding: 11px 38px;
+  color: white;
+  border-radius: 5px;
+
+}
+
+
+/*Третий блок*/
+
+
+.description{
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+
+
+}
+.descriptionLi {
+  width: inherit;
+  display: block;
+  font-size: 16px;
+
+
+}
+h3 {
+  font-size: 45px;
+  /*background-color: blue;*/
+  margin: 0px 0px 35px 0px;
+}
+
+
+.descriptionText {
+  width: 660px;
+  display: inline-block;
+  /*background-color: green;*/
+  padding-top: 50px;
+  padding-right: 116px;
+}
+.rule {
+/*background-color: blue;*/
+margin: 0px 0px 45px 0px;
+line-height: 24px;
+}
+.percent {
+  vertical-align: top;
+  width: 360px;
+  display: inline-block;
+  padding-top: 40px;
+
+  /*background-color: green;
+  border: 3px solid black;*/
+}
+
+.percent h4 {
+margin-top: 20px;
+  /*background-color: pink;*/
+}
+
+h4 {
+  text-transform: uppercase;
+  /*background-color: blue;*/
+  margin: 0px 0px 35px 0px;
+
+}
+
+.percents{
+  /*background-color: pink;*/
+  font-size: 45px;
+  font-weight: bold;
+  }
+
+
+.point {
+  display: inline-block;
+  /*background-color: red;*/
+  margin-right:15px;
+}
+
+.reddash {
+  background-color: #fb565a;
+  width: 26px;
+  height: 3px;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-right: 10px;
+}
+
+
+
+
+/*Четвертый блок*/
+
+.logos {
+opacity: 0.2;
+  width: 1160px;
+  margin: 0px auto;
+  border-top: 2px solid black;
+  border-bottom:2px solid black;
+  margin-bottom: 100px;
+  margin-top: 80px;
+/*background-color: #fb565a;*/
+}
+
+.logos a {
+    display: inline-block;
+    width: 280px;
+      }
+
+.graydash {
+margin-bottom: 60px;
+display: inline-block;
+height: 52px;
+width: 2px;
+background-color: black;
+}
+
+/*Пятый блок*/
+
+.map {
+  position: relative;
+  width: 1160px;
+  margin: 10px auto 75px auto;
+  /*background-color: red;
+border: 10px solid black;*/
+}
+.position {
+  position: absolute;
+  right:280px;
+bottom:150px;
+}
+
+.adress {
+  padding-top: 30px;
+  text-align: center;
+  position: absolute;
+  background-color: white;
+  width: 319px;
+  height: 278px;
+  left:100px;
+bottom:60px;
+
+}
+
+/*Шестой блок*/
+.footersocial{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.round {
+
+  display: inline-block;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+
+
+
+/*Красный - *#fb565a/
